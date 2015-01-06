@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- 		<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="_assets/css/jqm-demos.css"> -->
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	</head>
+	<body>
+		<div data-role="page" id="index">
+			<div data-role="header"><h1>页面标题</h1></div>
+			<div role="main" class="ui-content">
+				<p><a href="#index1" data-transition="slide">page2</a></p>
+			</div>
+			<div data-role="footer"><h4>页脚</h4></div>
+		</div>
+		<div data-role="page" id="index1">
+			<div data-role="header"><h1>页面标题1</h1></div>
+			<div role="main" class="ui-content">
+				<p><a href="#index" data-transition="slide">page1</a></p>
+			</div>
+			<div data-role="footer"><h4>页脚1</h4></div>
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.5.js"></script>
+		<script type="text/javascript">
+			// $(document).on("pagebeforecreate",function(){
+			// 	alert("pagebeforecreate");
+			// });
+			// $(document).on("pagecreate",function(){
+			// 	alert("pagecreate");
+			// });
+			// $(document).on("pageinit",function(){
+			// 	alert("pageinit");
+			// });
+
+			// $(document).on("pagebeforehide","#index",function(){
+			// 	alert("#index pagebeforehide");
+			// });
+			// $(document).on("pagehide","#index",function(){
+			// 	alert("#index pagehide");
+			// });
+
+			// $(document).on("pagebeforeshow","#index1",function(){
+			// 	alert("#index1 pagebeforeshow");
+			// });
+			// $(document).on("pageshow","#index1",function(){
+			// 	alert("#index1 pageshow");
+			// });
+		</script>
+	</body>
+</html>
