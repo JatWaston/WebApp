@@ -13,6 +13,7 @@
 			<div data-role="header"><h1>页面标题</h1></div>
 			<div role="main" class="ui-content">
 				<p><a href="#index1" data-transition="slide">page2</a></p>
+				<a href="#" class="ui-btn" id="ajaxbtn">请求数据</a>
 			</div>
 			<div data-role="footer"><h4>页脚</h4></div>
 		</div>
@@ -26,6 +27,17 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.mobile-1.4.5.js"></script>
 		<script type="text/javascript">
+		//Ajax请求
+		$(document).on("pageinit","#index", function(){
+			//var url = "http://localhost/~zzl/SAE/Service/FunnyVideo/funnyjoke/1/test.php";
+			var url = "http://172.17.169.91/~zzl/SAE/Service/FunnyVideo/funnyjoke/1/test.php";
+			$("#ajaxbtn").on("click",function(){
+				$.get(url,{},function(data) {
+					alert(data);
+					console.log(data);
+				});
+			});
+		});
 			// $(document).on("pagebeforecreate",function(){
 			// 	alert("pagebeforecreate");
 			// });
